@@ -1,0 +1,364 @@
+html {
+  height: 100%;
+  background-color: #f8f8f8;
+  display: table;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  width: 1518px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  display: table-cell;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-title {
+  display: block;
+  width: 379.5px;
+  height: 40px;
+  padding: 12px 0 0;
+  background: #9dc852;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s background-color;
+}
+
+.menu-title:before {
+  content: "";
+  display: block;
+  height: 0;
+  border-top: 5px solid #9dc852;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 0 solid #dddddd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  transition: 0.2s 0.2s border-top ease-out, 0.3s border-top-color;
+}
+
+.menu-title:hover {
+  background: #8db842;
+}
+
+.menu-title:hover:before {
+  border-top-color: #8db842;
+}
+
+.menu:hover > .menu-title:before {
+  border-top-width: 0;
+  transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
+}
+
+.menu-title:after {
+  content: "";
+  display: block;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 0 solid #ebebeb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  transition: 0.2s border-bottom ease-in;
+}
+
+.menu:hover > .menu-title:after {
+  border-bottom-width: 5px;
+  transition: 0.2s 0.2s border-bottom-width ease-out;
+}
+
+.menu-title_2nd {
+  background: #4e96b3;
+}
+
+.menu-title_2nd:hover {
+  background: #3e86a3;
+}
+
+.menu-title_2nd:before {
+  border-top-color: #4e96b3;
+}
+
+.menu-title_2nd:hover:before {
+  border-top-color: #3e86a3;
+}
+
+.menu-title_3rd {
+  background: #c97676;
+}
+
+.menu-title_3rd:hover {
+  background: #b96666;
+}
+
+.menu-title_3rd:before {
+  border-top-color: #c97676;
+}
+
+.menu-title_3rd:hover:before {
+  border-top-color: #b96666;
+}
+
+.menu-title_4th {
+  background: #dbab58;
+}
+
+.menu-title_4th:hover {
+  background: #cb9b48;
+}
+
+.menu-title_4th:before {
+  border-top-color: #dbab58;
+}
+
+.menu-title_4th:hover:before {
+  border-top-color: #cb9b48;
+}
+
+
+
+.hList > * {
+  float: left;
+}
+
+.hList > * + * {
+  margin-left: 0;
+}
+
+.left-title {
+  left: 10px;
+  top: 0;
+  width: 180px;
+  height: 50px;
+  line-height: 30px;
+  color: #535050;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*  字体  */
+.video {
+  position: relative;
+  float: left;
+  left: 0;
+  width: 285px;
+  height: 160px;
+  background-position: center center;
+  margin: 5px 10px 0px 10px;
+}
+
+
+
+.videofont_a {
+  width: 350px;
+  height: 30px;
+  left: 0;
+  text-align: center;
+  line-height: 30px;
+  bottom: 5px;
+  font-size: 12px;
+  color: #FFFFFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 0 5px #000000;
+}
+/*  video */
+#div1, #div2, #div3,#div4{
+  display: inline-block;
+}
+/*  横向排列 */
+.jz{
+  margin: 0 auto;
+}
+/*  单个DIV水平居中 */
+#wrap1{
+  display: flex;
+  justify-content: flex-start;
+}
+/*横向排列2*/
+#HotContent {
+  right: 30px;
+  top: 5px;
+  width: 440px;
+  height: 245px;
+  font-size: 22px;
+  text-indent: 2em;
+  margin: 0 auto;
+}
+/*KOD*/
+#wrap2{
+  display: flex;
+  justify-content: flex-start;
+}
+/*横向排列3*/
+.ranking-title a {
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  width: 275px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ranking-title .ranking-num {
+  left: 0;
+  margin: 5px 0 0 0;
+  width: 15px;
+  height: 20px;
+  background-color: #232323;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 2px;
+}
+/*音乐排行*/
+.week_month_style1 {
+  top: 35px;
+  right: 0;
+  width: 150px;
+  height: 35px;
+  font-size: 15px;
+  background-color: #cb172b;
+  color: #FFFFFF;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 auto;
+}
+.week_month_style2 {
+  top: 35px;
+  right: 0;
+  width: 150px;
+  height: 35px;
+  font-size: 15px;
+  background-color: #0011cb;
+  color: #FFFFFF;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 auto;
+}
+/*音乐榜单*/
+.db{
+  background-color: #535050;
+  height: 50px;
+}
+.dbzt {
+  left: 10px;
+  top: 0;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  color: #fffbfb;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+/*底部*/
+#wrap3{
+  display: flex;
+  justify-content: flex-start;
+}
+/*横向排列3*/
+.jxzt {
+  left: 10px;
+  top: 0;
+  width: 500px;
+  height: 30px;
+  line-height: 30px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+/*教学字体*/
+.fgl{
+  background-color: #535050;
+  height: 10px;
+}
+/*分隔栏*/
+#wrap4{
+  display: flex;
+  justify-content: flex-start;
+}
+/*横向排列4*/
+#wrap5{
+  display: flex;
+  justify-content: flex-start;
+}
+/*排行榜*/
+.phb1 {
+  left: 10px;
+  top: 0;
+  width: 600px;
+  line-height: 30px;
+  color: #535050;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*  字体  */
+#wrap6{
+  display: flex;
+  justify-content: flex-start;
+}
+/*排行榜*/#wrap7{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap8{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap9{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap10{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap11{
+          display: flex;
+          justify-content: flex-start;
+        }
+/*排行榜*/
+#wrap12{
+  display: flex;
+  justify-content: flex-start;
+}
+/*排行榜*/#wrap13{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap14{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/#wrap15{
+         display: flex;
+         justify-content: flex-start;
+       }
+/*排行榜*/
